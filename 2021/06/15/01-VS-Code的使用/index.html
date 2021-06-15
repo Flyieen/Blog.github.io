@@ -1,5 +1,234 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>01-VS Code的使用 - Flyieen的博客</title><link rel="manifest" href="/Blog.github.io/manifest.json"><meta name="application-name" content="Flyieen的博客"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Flyieen的博客"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="前言 文章标题：《第一次使用 VS Code 时你应该知道的一切配置》。本文的最新内容，更新于 2020-06-19。大家完全不用担心这篇文章会过时，因为随着 VS Code 的版本更新和插件更新，本文也会随之更新。   本文的最新内容，也会在GitHub上同步更新，欢迎 star。  VS Code 软件实在是太酷、太好用了，越来越多的新生代互联网青年正在使用它。 前端男神尤雨溪大大这样评价 V"><meta property="og:type" content="article"><meta property="og:title" content="01-VS Code的使用"><meta property="og:url" content="https://flyieen.github.io/Blog.github.io/2021/06/15/01-VS-Code%E7%9A%84%E4%BD%BF%E7%94%A8/"><meta property="og:site_name" content="Flyieen的博客"><meta property="og:description" content="前言 文章标题：《第一次使用 VS Code 时你应该知道的一切配置》。本文的最新内容，更新于 2020-06-19。大家完全不用担心这篇文章会过时，因为随着 VS Code 的版本更新和插件更新，本文也会随之更新。   本文的最新内容，也会在GitHub上同步更新，欢迎 star。  VS Code 软件实在是太酷、太好用了，越来越多的新生代互联网青年正在使用它。 前端男神尤雨溪大大这样评价 V"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://img.smyhvae.com/20200619_0133.png"><meta property="og:image" content="http://img.smyhvae.com/20190313_1750_3.png"><meta property="og:image" content="http://img.smyhvae.com/20190329_2120.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1738.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1739_2.png"><meta property="og:image" content="http://img.smyhvae.com/20190329_1750_2.png"><meta property="og:image" content="http://img.smyhvae.com/20190329_2110.png"><meta property="og:image" content="http://img.smyhvae.com/20190414_1751.png"><meta property="og:image" content="http://img.smyhvae.com/20191103_1327.png"><meta property="og:image" content="http://img.smyhvae.com/20191108_1550.png"><meta property="og:image" content="http://img.smyhvae.com/20190415_2009.png"><meta property="og:image" content="http://img.smyhvae.com/20200619_0030.gif"><meta property="og:image" content="http://img.smyhvae.com/20190417_2140.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2156.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2216.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2213.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2205.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2207.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2209.png"><meta property="og:image" content="http://img.smyhvae.com/20190417_2221.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1758.png"><meta property="og:image" content="http://img.smyhvae.com/20190329_1756.png"><meta property="og:image" content="http://img.smyhvae.com/20190329_1757.png"><meta property="og:image" content="http://img.smyhvae.com/20190415_2052.png"><meta property="og:image" content="http://img.smyhvae.com/20191108_1655.png"><meta property="og:image" content="http://img.smyhvae.com/20190415_2107.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1850.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_2022.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_2023.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1907.png"><meta property="og:image" content="http://img.smyhvae.com/20200516_1633.png"><meta property="og:image" content="http://img.smyhvae.com/20200521_1530.png"><meta property="og:image" content="http://img.smyhvae.com/20200521_1550.png"><meta property="og:image" content="http://img.smyhvae.com/20191108_1553_2.png"><meta property="og:image" content="http://img.smyhvae.com/20200618_2300.png"><meta property="og:image" content="http://img.smyhvae.com/20200618_2025.png"><meta property="og:image" content="http://img.smyhvae.com/20200618_2100.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1958.png"><meta property="og:image" content="http://img.smyhvae.com/20200618_2246.png"><meta property="og:image" content="http://img.smyhvae.com/20200619_1403.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_1937.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_2012.png"><meta property="og:image" content="http://img.smyhvae.com/20190418_2005.png"><meta property="og:image" content="https://img.smyhvae.com/20210329_1930.png"><meta property="article:published_time" content="2021-06-15T10:54:25.000Z"><meta property="article:modified_time" content="2021-06-15T10:56:21.182Z"><meta property="article:author" content="Flyieen"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="http://img.smyhvae.com/20200619_0133.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://flyieen.github.io/Blog.github.io/2021/06/15/01-VS-Code%E7%9A%84%E4%BD%BF%E7%94%A8/"},"headline":"01-VS Code的使用","image":["http://img.smyhvae.com/20200619_0133.png","http://img.smyhvae.com/20190313_1750_3.png","http://img.smyhvae.com/20190329_2120.png","http://img.smyhvae.com/20190418_1738.png","http://img.smyhvae.com/20190418_1739_2.png","http://img.smyhvae.com/20190329_1750_2.png","http://img.smyhvae.com/20190329_2110.png","http://img.smyhvae.com/20190414_1751.png","http://img.smyhvae.com/20191103_1327.png","http://img.smyhvae.com/20191108_1550.png","http://img.smyhvae.com/20190415_2009.png","http://img.smyhvae.com/20200619_0030.gif","http://img.smyhvae.com/20190417_2140.png","http://img.smyhvae.com/20190417_2156.png","http://img.smyhvae.com/20190417_2216.png","http://img.smyhvae.com/20190417_2213.png","http://img.smyhvae.com/20190417_2205.png","http://img.smyhvae.com/20190417_2207.png","http://img.smyhvae.com/20190417_2209.png","http://img.smyhvae.com/20190417_2221.png","http://img.smyhvae.com/20190418_1758.png","http://img.smyhvae.com/20190329_1756.png","http://img.smyhvae.com/20190329_1757.png","http://img.smyhvae.com/20190415_2052.png","http://img.smyhvae.com/20191108_1655.png","http://img.smyhvae.com/20190415_2107.png","http://img.smyhvae.com/20190418_1850.png","http://img.smyhvae.com/20190418_2022.png","http://img.smyhvae.com/20190418_2023.png","http://img.smyhvae.com/20190418_1907.png","http://img.smyhvae.com/20200516_1633.png","http://img.smyhvae.com/20200521_1530.png","http://img.smyhvae.com/20200521_1550.png","http://img.smyhvae.com/20191108_1553_2.png","http://img.smyhvae.com/20200618_2300.png","http://img.smyhvae.com/20200618_2025.png","http://img.smyhvae.com/20200618_2100.png","http://img.smyhvae.com/20190418_1958.png","http://img.smyhvae.com/20200618_2246.png","http://img.smyhvae.com/20200619_1403.png","http://img.smyhvae.com/20190418_1937.png","http://img.smyhvae.com/20190418_2012.png","http://img.smyhvae.com/20190418_2005.png","https://img.smyhvae.com/20210329_1930.png"],"datePublished":"2021-06-15T10:54:25.000Z","dateModified":"2021-06-15T10:56:21.182Z","author":{"@type":"Person","name":"Flyieen"},"publisher":{"@type":"Organization","name":"Flyieen的博客","logo":{"@type":"ImageObject"}},"description":"前言 文章标题：《第一次使用 VS Code 时你应该知道的一切配置》。本文的最新内容，更新于 2020-06-19。大家完全不用担心这篇文章会过时，因为随着 VS Code 的版本更新和插件更新，本文也会随之更新。   本文的最新内容，也会在GitHub上同步更新，欢迎 star。  VS Code 软件实在是太酷、太好用了，越来越多的新生代互联网青年正在使用它。 前端男神尤雨溪大大这样评价 V"}</script><link rel="canonical" href="https://flyieen.github.io/Blog.github.io/2021/06/15/01-VS-Code%E7%9A%84%E4%BD%BF%E7%94%A8/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/Blog.github.io/css/default.css"><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/Blog.github.io/">Flyieen的博客</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-06-15T10:54:25.000Z" title="2021/6/15 下午6:54:25">2021-06-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-06-15T10:56:21.182Z" title="2021/6/15 下午6:56:21">2021-06-15</time></span></div></div><h1 class="title is-3 is-size-4-mobile">01-VS Code的使用</h1><div class="content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Blog.github.io/img/favicon.png">
+  <link rel="icon" href="/Blog.github.io/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Flyieen">
+  <meta name="keywords" content="">
+  
+  <title>01-VS Code的使用 - Flyieen的博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/Blog.github.io/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/Blog.github.io/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"flyieen.github.io","root":"/Blog.github.io/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/Blog.github.io/js/utils.js" ></script>
+  <script  src="/Blog.github.io/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/Blog.github.io/">&nbsp;<strong>Flyieen's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/Blog.github.io/img/Ash.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="01-VS Code的使用">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-15 18:54" pubdate>
+        2021年6月15日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      10.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      114
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">01-VS Code的使用</h1>
+            
+            <div class="markdown-body">
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>文章标题：《第一次使用 VS Code 时你应该知道的一切配置》。本文的最新内容，更新于 2020-06-19。大家完全不用担心这篇文章会过时，因为随着 VS Code 的版本更新和插件更新，本文也会随之更新。</p>
 </blockquote>
 <blockquote>
@@ -7,7 +236,7 @@
 </blockquote>
 <p>VS Code 软件实在是太酷、太好用了，越来越多的新生代互联网青年正在使用它。</p>
 <p>前端男神<strong>尤雨溪</strong>大大这样评价 VS Code：</p>
-<p><img src="http://img.smyhvae.com/20200619_0133.png"></p>
+<p><img src="http://img.smyhvae.com/20200619_0133.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>有一点你可能会感到惊讶：VS Code 这款软件本身，是用 JavaScript 语言编写的（具体请自行查阅基于 JS 的 PC 客户端开发框架 <code>Electron</code>）。Jeff Atwood 在 2007 年提出了著名的 Atwood 定律：</p>
 <blockquote>
 <p><strong>任何能够用 JavaScript 实现的应用系统，最终都必将用 JavaScript 实现</strong>。</p>
@@ -55,7 +284,7 @@
 <li>VS Code 官网：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com</a></li>
 </ul>
 <p>VS Code 的安装很简单，直接去官网下载安装包，然后双击安装即可。</p>
-<p><img src="http://img.smyhvae.com/20190313_1750_3.png"></p>
+<p><img src="http://img.smyhvae.com/20190313_1750_3.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，直接点击 download，一键下载安装即可。</p>
 <h2 id="二、崭露锋芒：VS-Code-快捷键"><a href="#二、崭露锋芒：VS-Code-快捷键" class="headerlink" title="二、崭露锋芒：VS Code 快捷键"></a>二、崭露锋芒：VS Code 快捷键</h2><p>VS Code 用得熟不熟，首先就看你是否会用快捷键。以下列出的内容，都是常用快捷键，而加粗部分的快捷键，使用频率则非常高。</p>
 <p>任何工具，掌握 20%的技能，足矣应对 80% 的工作。既然如此，你可能会问：那就只保留 20% 的特性，不久可以满足 80%的用户了吗？</p>
@@ -445,25 +674,25 @@
 </tbody></table>
 <h3 id="9、自定义快捷键"><a href="#9、自定义快捷键" class="headerlink" title="9、自定义快捷键"></a>9、自定义快捷键</h3><p>按住快捷键「Cmd + Shift + P」，弹出命令面板，在命令面板中输入“快捷键”，可以进入快捷键的设置。</p>
 <p>当然，你也可以选择菜单栏「偏好设置 –&gt; 键盘快捷方式」，进入快捷键的设置：</p>
-<p><img src="http://img.smyhvae.com/20190329_2120.png"></p>
+<p><img src="http://img.smyhvae.com/20190329_2120.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="10、快捷键列表"><a href="#10、快捷键列表" class="headerlink" title="10、快捷键列表"></a>10、快捷键列表</h3><p>你可以点击 VS Code 左下角的齿轮按钮，效果如下：</p>
-<p><img src="http://img.smyhvae.com/20190418_1738.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1738.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，在展开的菜单中选择「键盘快捷方式」，就可以查看和修改所有的快捷键列表了：</p>
-<p><img src="http://img.smyhvae.com/20190418_1739_2.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1739_2.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="快捷键参考链接"><a href="#快捷键参考链接" class="headerlink" title="快捷键参考链接"></a>快捷键参考链接</h3><ul>
 <li>快捷键速查表[官方]：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf</a></li>
 </ul>
 <h2 id="三、命令面板的使用"><a href="#三、命令面板的使用" class="headerlink" title="三、命令面板的使用"></a>三、命令面板的使用</h2><p>Mac 用户按住快捷键 <code>Cmd+Shift+P</code> （Windows 用户按住快捷键<code>Ctrl+Shift+P</code>），可以打开命令面板。效果如下：</p>
-<p><img src="http://img.smyhvae.com/20190329_1750_2.png"></p>
+<p><img src="http://img.smyhvae.com/20190329_1750_2.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>如果们需要修改一些设置项，可以通过「命令面板」来操作，效率会更高。这里列举一些。</p>
 <h3 id="1、设置字体大小"><a href="#1、设置字体大小" class="headerlink" title="1、设置字体大小"></a>1、设置字体大小</h3><p>在命令面板输入“字体”，可以进行字体的设置，效果如下：</p>
-<p><img src="http://img.smyhvae.com/20190329_2110.png"></p>
+<p><img src="http://img.smyhvae.com/20190329_2110.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>当然，你也可以在菜单栏，选择「首选项-设置-常用设置」，在这个设置项里修改字体大小。</p>
 <h3 id="2、快捷键设置"><a href="#2、快捷键设置" class="headerlink" title="2、快捷键设置"></a>2、快捷键设置</h3><p>在命令面板输入“快捷键”，就可以进入快捷键的设置。</p>
 <h3 id="3、大小写转换"><a href="#3、大小写转换" class="headerlink" title="3、大小写转换"></a>3、大小写转换</h3><p>选中文本后，在命令面板中输入<code>transfrom</code>，就可以修改文本的大小写了。</p>
-<p><img src="http://img.smyhvae.com/20190414_1751.png"></p>
+<p><img src="http://img.smyhvae.com/20190414_1751.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="4、使用命令行启动-VS-Code"><a href="#4、使用命令行启动-VS-Code" class="headerlink" title="4、使用命令行启动 VS Code"></a>4、使用命令行启动 VS Code</h3><p>（1）输入快捷键「Cmd + Shift + P 」，选择<code>install code command</code>：</p>
-<p><img src="http://img.smyhvae.com/20191103_1327.png"></p>
+<p><img src="http://img.smyhvae.com/20191103_1327.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>（2）使用命令行：</p>
 <ul>
 <li><p><code>code</code>命令：启动 VS Code 软件</p>
@@ -476,63 +705,63 @@
 <p>或者，我们可以直接安装插件<code>Chinese (Simplified) Language Pack for Visual Studio Code</code>，是一样的。</p>
 <p>安装完成后，重启 VS Code。</p>
 <h3 id="2、面包屑（Breadcrumb）"><a href="#2、面包屑（Breadcrumb）" class="headerlink" title="2、面包屑（Breadcrumb）"></a>2、面包屑（Breadcrumb）</h3><p>打开 VS Code 的设置项，选择「用户设置 -&gt; 工作台 -&gt; 导航路径」，如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20191108_1550.png"></p>
+<p><img src="http://img.smyhvae.com/20191108_1550.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，将红框部分打钩即可。</p>
 <p>设置成功后，我们就可以查看到当前文件的「层级结构」，非常方便。如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20190415_2009.png"></p>
+<p><img src="http://img.smyhvae.com/20190415_2009.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>有了这个面包屑导航，我们可以在任意目录、任意文件之间随意跳转。</p>
 <h3 id="3、左右显示多个编辑器窗口（抄代码利器）"><a href="#3、左右显示多个编辑器窗口（抄代码利器）" class="headerlink" title="3、左右显示多个编辑器窗口（抄代码利器）"></a>3、左右显示多个编辑器窗口（抄代码利器）</h3><p>Mac 用户按住快捷键 <code>Cmd + \</code>， Windows 用户按住快捷键<code>Ctrl + \</code>，即可同时打开多个编辑器窗口，效果如下：</p>
-<p><img src="http://img.smyhvae.com/20200619_0030.gif"></p>
+<p><img src="http://img.smyhvae.com/20200619_0030.gif" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>按快捷键「Cmd + 1 」切换到左边的窗口，按快捷键「Cmd + 2 」切换到右边的窗口。随时随地，想切就切。</p>
 <p>学会了这一招，以后抄代码的时候，leader 再也不用担心我抄得慢了，一天工资到手。</p>
 <h3 id="4、是否显示代码的行号"><a href="#4、是否显示代码的行号" class="headerlink" title="4、是否显示代码的行号"></a>4、是否显示代码的行号</h3><p>VS Code 默认显示代码的行号。你可以在设置项里搜索 <code>editor.lineNumbers</code>修改设置，配置项如下：</p>
-<p><img src="http://img.smyhvae.com/20190417_2140.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2140.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>我建议保留这个设置项，无需修改。</p>
 <h3 id="5、右侧是否显示代码的缩略图"><a href="#5、右侧是否显示代码的缩略图" class="headerlink" title="5、右侧是否显示代码的缩略图"></a>5、右侧是否显示代码的缩略图</h3><p>VS Code 会在代码的右侧，默认显示缩略图。你可以在设置项里搜索 <code>editor.minimap</code>进行设置，配置项如下：</p>
-<p><img src="http://img.smyhvae.com/20190417_2156.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2156.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="6、将当前行代码高亮显示（更改光标所在行的背景色）"><a href="#6、将当前行代码高亮显示（更改光标所在行的背景色）" class="headerlink" title="6、将当前行代码高亮显示（更改光标所在行的背景色）"></a>6、将当前行代码高亮显示（更改光标所在行的背景色）</h3><p>当我们把光标放在某一行时，这一行的背景色并没有发生变化。如果想<strong>高亮显示</strong>当前行的代码，需要设置两步：</p>
 <p>（1）在设置项里搜索<code>editor.renderLineHighlight</code>，将选项值设置为<code>all</code>或者<code>line</code>。</p>
 <p>（2）在设置项里增加如下内容：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;workbench.colorCustomizations&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;editor.lineHighlightBackground&quot;</span>: <span class="string">&quot;#00000090&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;editor.lineHighlightBorder&quot;</span>: <span class="string">&quot;#ffffff30&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-string">&quot;workbench.colorCustomizations&quot;</span>: &#123;<br>    <span class="hljs-attr">&quot;editor.lineHighlightBackground&quot;</span>: <span class="hljs-string">&quot;#00000090&quot;</span>,<br>    <span class="hljs-attr">&quot;editor.lineHighlightBorder&quot;</span>: <span class="hljs-string">&quot;#ffffff30&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>上方代码，第一行代码的意思是：修改光标所在行的背景色（背景色设置为全黑，不透明度 90%）；第二行代码的意思是：修改光标所在行的边框色。</p>
 <h3 id="7、改完代码后立即自动保存"><a href="#7、改完代码后立即自动保存" class="headerlink" title="7、改完代码后立即自动保存"></a>7、改完代码后立即自动保存</h3><p><strong>方式一</strong>：</p>
 <p>改完代码后，默认不会自动保存。你可以在设置项里搜索<code>files.autoSave</code>，修改配置项如下：</p>
-<p><img src="http://img.smyhvae.com/20190417_2216.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2216.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，我们将配置项修改为<code>onFocusChange</code>之后，那么，当光标离开该文件后，这个文件就会自动保存了。<strong>非常方便</strong>。</p>
 <p><strong>方式二</strong>：</p>
 <p>当然，你也可以直接在菜单栏选择「文件-自动保存」。勾选后，当你写完代码后，文件会立即实时保存。</p>
 <h3 id="8、保存代码后，是否立即格式化"><a href="#8、保存代码后，是否立即格式化" class="headerlink" title="8、保存代码后，是否立即格式化"></a>8、保存代码后，是否立即格式化</h3><p>保存代码后，默认<strong>不会立即</strong>进行代码的格式化。你可以在设置项里搜索<code>editor.formatOnSave</code>查看该配置项：</p>
-<p><img src="http://img.smyhvae.com/20190417_2213.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2213.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>我觉得这个配置项保持默认就好，不用打钩。</p>
 <h3 id="9、空格-or-制表符"><a href="#9、空格-or-制表符" class="headerlink" title="9、空格 or 制表符"></a>9、空格 or 制表符</h3><p>VS Code 会根据你所打开的文件来决定该使用空格还是制表。也就是说，如果你的项目中使用的都是制表符，那么，当你在写新的代码时，按下 tab 键后，编辑器就会识别成制表符。</p>
 <p>常见的设置项如下：</p>
 <ul>
 <li><strong>editor.detectIndentation</strong>：自动检测（默认开启）。截图如下：</li>
 </ul>
-<p><img src="http://img.smyhvae.com/20190417_2205.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2205.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <ul>
 <li><strong>editor.insertSpaces</strong>：按 Tab 键时插入空格（默认）。截图如下：</li>
 </ul>
-<p><img src="http://img.smyhvae.com/20190417_2207.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2207.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <ul>
 <li><strong>editor.tabSize</strong>：一个制表符默认等于四个空格。截图如下：</li>
 </ul>
-<p><img src="http://img.smyhvae.com/20190417_2209.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2209.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="10、新建文件后的默认文件类型"><a href="#10、新建文件后的默认文件类型" class="headerlink" title="10、新建文件后的默认文件类型"></a>10、新建文件后的默认文件类型</h3><p>当我们按下快捷键「Cmd + N」新建文件时，VS Code 默认无法识别这个文件到底是什么类型的，因此也就无法识别相应的语法高亮。</p>
 <p>如果你想修改默认的文件类型，可以在设置项里搜索<code>files.defaultLanguage</code>，设置项如下：</p>
-<p><img src="http://img.smyhvae.com/20190417_2221.png"></p>
+<p><img src="http://img.smyhvae.com/20190417_2221.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中的红框部分，填入你期望的默认文件类型。我填的是<code>html</code>类型，你也可以填写成 <code>javascript</code> 或者 <code>markdown</code>，或者其他的语言类型。</p>
 <h3 id="11、删除文件时，是否弹出确认框"><a href="#11、删除文件时，是否弹出确认框" class="headerlink" title="11、删除文件时，是否弹出确认框"></a>11、删除文件时，是否弹出确认框</h3><p>当我们在 VS Code 中删除文件时，默认会弹出确认框。如果你想修改设置，可以在设置项里搜索<code>xplorer.confirmDelete</code>。截图如下：</p>
-<p><img src="http://img.smyhvae.com/20190418_1758.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1758.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>我建议这个设置项保持默认的打钩就好，不用修改。删除文件前的弹窗提示，也是为了安全考虑，万一手贱不小心删了呢？</p>
 <blockquote>
 <p>接下来，我们来讲一些更高级的配置。</p>
 </blockquote>
 <h3 id="12、文件对比"><a href="#12、文件对比" class="headerlink" title="12、文件对比"></a>12、文件对比</h3><p>VS Code 默认支持<strong>对比两个文件的内容</strong>。选中两个文件，然后右键选择「将已选项进行比较」即可，效果如下：</p>
-<p><img src="http://img.smyhvae.com/20190329_1756.png"></p>
+<p><img src="http://img.smyhvae.com/20190329_1756.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>VS Code 自带的对比功能并不够强大，我们可以安装插件<code>compareit</code>，进行更丰富的对比。比如说，安装完插件<code>compareit</code>之后，我们可以将「当前文件」与「剪切板」里的内容进行对比：</p>
-<p><img src="http://img.smyhvae.com/20190329_1757.png"></p>
+<p><img src="http://img.smyhvae.com/20190329_1757.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="13、查找某个函数在哪些地方被调用了"><a href="#13、查找某个函数在哪些地方被调用了" class="headerlink" title="13、查找某个函数在哪些地方被调用了"></a>13、查找某个函数在哪些地方被调用了</h3><p>比如我已经在<code>a.js</code>文件里调用了 <code>foo()</code>函数。那么，如果我想知道<code>foo()</code>函数在其他文件中是否也被调用了，该怎么做呢？</p>
 <p>做法如下：在 <code>a.js</code> 文件里，选中<code>foo()</code>函数（或者将光标放置在<code>foo()</code>函数上），然后按住快捷键「Shift + F12」，就能看到 <code>foo()</code>函数在哪些地方被调用了，比较实用。</p>
 <h3 id="14、鼠标操作"><a href="#14、鼠标操作" class="headerlink" title="14、鼠标操作"></a>14、鼠标操作</h3><ul>
@@ -556,18 +785,18 @@
 </li>
 </ul>
 <p>另外，你可能会注意到，搜索框里有很多按钮，每个按钮都对应着不同的功能，如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20190415_2052.png"></p>
+<p><img src="http://img.smyhvae.com/20190415_2052.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，你可以通过「Tab」键和「Shift + Tab」键在输入框和替换框之间进行切换。</p>
 <p>「在选定内容中查找」这个功能还是比较实用的。你也可以在设置项里搜索 <code>editor.find.autoFindInSelection</code>，勾选该设置项后，那么，当你选中指定内容后，然后按住「Cmd + F」，就可以<strong>自动</strong>只在这些内容里进行查找。该设置项如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20191108_1655.png"></p>
+<p><img src="http://img.smyhvae.com/20191108_1655.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="17、全局搜索"><a href="#17、全局搜索" class="headerlink" title="17、全局搜索"></a>17、全局搜索</h3><p>在上面的快捷键列表中，我们已经知道如下快捷键：</p>
 <ul>
 <li>Cmd + Shift + F（Win 用户是 Ctrl + Shift +F）：在全局的文件夹中进行搜索。效果如下：</li>
 </ul>
-<p><img src="http://img.smyhvae.com/20190415_2107.png"></p>
+<p><img src="http://img.smyhvae.com/20190415_2107.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，你可以点击红框部分，展开更多的配置项。</p>
 <h3 id="18、Git-版本管理"><a href="#18、Git-版本管理" class="headerlink" title="18、Git 版本管理"></a>18、Git 版本管理</h3><p>VS Code 自带了 Git 版本管理，如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20190418_1850.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1850.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，我们可以在这里进行常见的 git 命令操作。如果你还不熟悉 <strong>Git 版本管理</strong>，可以先去补补课。</p>
 <p>与此同时，我建议安装插件<code>GitLens</code>，它是 VS Code 中我最推荐的一个插件，简直是 Git 神器，码农必备。</p>
 <h3 id="19、将工作区放大-缩小"><a href="#19、将工作区放大-缩小" class="headerlink" title="19、将工作区放大/缩小"></a>19、将工作区放大/缩小</h3><p>我们在上面的设置项里修改字体大小后，仅仅只是修改了代码的字体大小。</p>
@@ -575,9 +804,9 @@
 <p><strong>当我们在投影仪上给别人演示代码的时候，这一招十分管用</strong>。</p>
 <p>如果你想恢复默认的工作区大小，可以在命令面板输入<code>重置缩放</code>（英文是<code>reset zoom</code>）</p>
 <h3 id="20、创建多层子文件夹"><a href="#20、创建多层子文件夹" class="headerlink" title="20、创建多层子文件夹"></a>20、创建多层子文件夹</h3><p>我们可以在新建文件夹的时候，如果直接输入<code>aa/bb/cc</code>，比如：</p>
-<p><img src="http://img.smyhvae.com/20190418_2022.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_2022.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>那么，就可以创建多层子文件夹，效果如下：</p>
-<p><img src="http://img.smyhvae.com/20190418_2023.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_2023.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="21、-vscode-文件夹的作用"><a href="#21、-vscode-文件夹的作用" class="headerlink" title="21、.vscode 文件夹的作用"></a>21、<code>.vscode</code> 文件夹的作用</h3><p>为了统一团队的 vscode 配置，我们可以在项目的根目录下建立<code>.vscode</code>目录，在里面放置一些配置内容，比如：</p>
 <ul>
 <li><p><code>settings.json</code>：工作空间设置、代码格式化配置、插件配置。</p>
@@ -589,26 +818,26 @@
 <h3 id="22、自带终端"><a href="#22、自带终端" class="headerlink" title="22、自带终端"></a>22、自带终端</h3><p>我们可以按下「Ctrl + `」打开 VS Code 自带的终端。我认为内置终端并没有那么好用，我更建议你使用第三方的终端 <strong>item2</strong>。</p>
 <h3 id="23、markdown-语法支持"><a href="#23、markdown-语法支持" class="headerlink" title="23、markdown 语法支持"></a>23、markdown 语法支持</h3><p>VS Code 自带 markdown 语法高亮。也就是说，如果你是用 markdown 格式写文章，则完全可以用 VS Code 进行写作。</p>
 <p>写完 md 文件之后，你可以点击右上角的按钮进行预览，如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20190418_1907.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1907.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>我一般是安装「Markdown Preview Github Styling」插件，以 GitHub 风格预览 Markdown 样式。样式十分简洁美观。</p>
 <p>你也可以在控制面板输入<code>Markdown: 打开预览</code>，直接全屏预览 markdown 文件。</p>
 <h3 id="24、Emmet-in-VS-Code"><a href="#24、Emmet-in-VS-Code" class="headerlink" title="24、Emmet in VS Code"></a>24、Emmet in VS Code</h3><p><code>Emmet</code>可以极大的提高 html 和 css 的编写效率，它提供了一种非常简练的语法规则。</p>
 <p>举个例子，我们在编辑器中输入缩写代码：<code>ul&gt;li*6</code> ，然后按下 Tab 键，即可得到如下代码片段：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <p>VS Code 默认支持 Emmet。更多 Emmet 语法规则，请自行查阅。</p>
 <h3 id="25、修改字体，使用「Fira-Code」字体"><a href="#25、修改字体，使用「Fira-Code」字体" class="headerlink" title="25、修改字体，使用「Fira Code」字体"></a>25、修改字体，使用「Fira Code」字体</h3><p>这款字体很漂亮，很适合用来写代码：</p>
-<p><img src="http://img.smyhvae.com/20200516_1633.png"></p>
+<p><img src="http://img.smyhvae.com/20200516_1633.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>安装步骤如下：</p>
 <p>（1）进入 <a target="_blank" rel="noopener" href="https://github.com/tonsky/FiraCode">https://github.com/tonsky/FiraCode</a> 网站，下载并安装「Fira Code」字体。</p>
 <p>（2）打开 VS Code 的「设置」，搜索<code>font</code>，修改相关配置为如下内容：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.fontFamily&quot;</span>: <span class="string">&quot;&#x27;Fira Code&#x27;,Menlo, Monaco, &#x27;Courier New&#x27;, monospace&quot;</span>, <span class="comment">// 设置字体显示</span></span><br><span class="line"><span class="string">&quot;editor.fontLigatures&quot;</span>: <span class="literal">false</span>,<span class="comment">//控制是否启用字体连字，true启用，false不启用</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-string">&quot;editor.fontFamily&quot;</span>: <span class="hljs-string">&quot;&#x27;Fira Code&#x27;,Menlo, Monaco, &#x27;Courier New&#x27;, monospace&quot;</span>, <span class="hljs-comment">// 设置字体显示</span><br><span class="hljs-string">&quot;editor.fontLigatures&quot;</span>: <span class="hljs-literal">false</span>,<span class="hljs-comment">//控制是否启用字体连字，true启用，false不启用</span><br></code></pre></td></tr></table></figure>
 
 <p>上方的第二行配置，取决于个人习惯，我是直接设置为<code>&quot;editor.fontLigatures&quot;: null</code>，因为我不太习惯连字。</p>
 <h3 id="26、代码格式化：Prettier"><a href="#26、代码格式化：Prettier" class="headerlink" title="26、代码格式化：Prettier"></a>26、代码格式化：Prettier</h3><p>我们可以使用 <code>Prettier</code>进行代码格式化，会让代码的展示更加美观。步骤如下：</p>
 <p>（1）安装插件 <code>Prettier</code>。</p>
 <p>（2）在项目的根路径下，新建文件<code>.prettierrc</code>，并在文件中添加如下内容：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;printWidth&quot;</span>: <span class="number">150</span>,</span><br><span class="line">  <span class="attr">&quot;tabWidth&quot;</span>: <span class="number">4</span>,</span><br><span class="line">  <span class="attr">&quot;semi&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;singleQuote&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;trailingComma&quot;</span>: <span class="string">&quot;es5&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;tslintIntegration&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;insertSpaceBeforeFunctionParenthesis&quot;</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs json">&#123;<br>  <span class="hljs-attr">&quot;printWidth&quot;</span>: <span class="hljs-number">150</span>,<br>  <span class="hljs-attr">&quot;tabWidth&quot;</span>: <span class="hljs-number">4</span>,<br>  <span class="hljs-attr">&quot;semi&quot;</span>: <span class="hljs-literal">true</span>,<br>  <span class="hljs-attr">&quot;singleQuote&quot;</span>: <span class="hljs-literal">true</span>,<br>  <span class="hljs-attr">&quot;trailingComma&quot;</span>: <span class="hljs-string">&quot;es5&quot;</span>,<br>  <span class="hljs-attr">&quot;tslintIntegration&quot;</span>: <span class="hljs-literal">true</span>,<br>  <span class="hljs-attr">&quot;insertSpaceBeforeFunctionParenthesis&quot;</span>: <span class="hljs-literal">false</span><br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>上面的内容，是我自己的配置，你可以参考。</p>
 <p>更多配置，可以参考官方文档：<a target="_blank" rel="noopener" href="https://prettier.io/docs/en/options.html">https://prettier.io/docs/en/options.html</a></p>
@@ -629,7 +858,7 @@
 </li>
 </ul>
 <p>举例如下：(注意，其中的注释需要去掉)</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;host&quot;</span>: <span class="string">&quot;192.168.xxx.xxx&quot;</span>, <span class="comment">//服务器ip</span></span><br><span class="line">  <span class="attr">&quot;port&quot;</span>: <span class="number">22</span>, <span class="comment">//端口，sftp模式是22</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span>: <span class="string">&quot;&quot;</span>, <span class="comment">//用户名</span></span><br><span class="line">  <span class="attr">&quot;password&quot;</span>: <span class="string">&quot;&quot;</span>, <span class="comment">//密码</span></span><br><span class="line">  <span class="attr">&quot;protocol&quot;</span>: <span class="string">&quot;sftp&quot;</span>, <span class="comment">//模式</span></span><br><span class="line">  <span class="attr">&quot;agent&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">&quot;privateKeyPath&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">&quot;passphrase&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">&quot;passive&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">&quot;interactiveAuth&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">&quot;remotePath&quot;</span>: <span class="string">&quot;/root/node/build/&quot;</span>, <span class="comment">//服务器上的文件地址</span></span><br><span class="line">  <span class="attr">&quot;context&quot;</span>: <span class="string">&quot;./server/build&quot;</span>, <span class="comment">//本地的文件地址</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">&quot;uploadOnSave&quot;</span>: <span class="literal">true</span>, <span class="comment">//监听保存并上传</span></span><br><span class="line">  <span class="attr">&quot;syncMode&quot;</span>: <span class="string">&quot;update&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;watcher&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">//监听外部文件</span></span><br><span class="line">    <span class="attr">&quot;files&quot;</span>: <span class="literal">false</span>, <span class="comment">//外部文件的绝对路径</span></span><br><span class="line">    <span class="attr">&quot;autoUpload&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;autoDelete&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;ignore&quot;</span>: [</span><br><span class="line">    <span class="comment">//忽略项</span></span><br><span class="line">    <span class="string">&quot;**/.vscode/**&quot;</span>,</span><br><span class="line">    <span class="string">&quot;**/.git/**&quot;</span>,</span><br><span class="line">    <span class="string">&quot;**/.DS_Store&quot;</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs json">&#123;<br>  <span class="hljs-attr">&quot;host&quot;</span>: <span class="hljs-string">&quot;192.168.xxx.xxx&quot;</span>, <span class="hljs-comment">//服务器ip</span><br>  <span class="hljs-attr">&quot;port&quot;</span>: <span class="hljs-number">22</span>, <span class="hljs-comment">//端口，sftp模式是22</span><br>  <span class="hljs-attr">&quot;username&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">//用户名</span><br>  <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">//密码</span><br>  <span class="hljs-attr">&quot;protocol&quot;</span>: <span class="hljs-string">&quot;sftp&quot;</span>, <span class="hljs-comment">//模式</span><br>  <span class="hljs-attr">&quot;agent&quot;</span>: <span class="hljs-literal">null</span>,<br>  <span class="hljs-attr">&quot;privateKeyPath&quot;</span>: <span class="hljs-literal">null</span>,<br>  <span class="hljs-attr">&quot;passphrase&quot;</span>: <span class="hljs-literal">null</span>,<br>  <span class="hljs-attr">&quot;passive&quot;</span>: <span class="hljs-literal">false</span>,<br>  <span class="hljs-attr">&quot;interactiveAuth&quot;</span>: <span class="hljs-literal">false</span>,<br>  <span class="hljs-attr">&quot;remotePath&quot;</span>: <span class="hljs-string">&quot;/root/node/build/&quot;</span>, <span class="hljs-comment">//服务器上的文件地址</span><br>  <span class="hljs-attr">&quot;context&quot;</span>: <span class="hljs-string">&quot;./server/build&quot;</span>, <span class="hljs-comment">//本地的文件地址</span><br><br>  <span class="hljs-attr">&quot;uploadOnSave&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">//监听保存并上传</span><br>  <span class="hljs-attr">&quot;syncMode&quot;</span>: <span class="hljs-string">&quot;update&quot;</span>,<br>  <span class="hljs-attr">&quot;watcher&quot;</span>: &#123;<br>    <span class="hljs-comment">//监听外部文件</span><br>    <span class="hljs-attr">&quot;files&quot;</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">//外部文件的绝对路径</span><br>    <span class="hljs-attr">&quot;autoUpload&quot;</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">&quot;autoDelete&quot;</span>: <span class="hljs-literal">false</span><br>  &#125;,<br>  <span class="hljs-attr">&quot;ignore&quot;</span>: [<br>    <span class="hljs-comment">//忽略项</span><br>    <span class="hljs-string">&quot;**/.vscode/**&quot;</span>,<br>    <span class="hljs-string">&quot;**/.git/**&quot;</span>,<br>    <span class="hljs-string">&quot;**/.DS_Store&quot;</span><br>  ]<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>（3）在 VS Code 的当前文件里，选择「右键 -&gt; upload」，就可以将本地的代码上传到 指定的 ftp 服务器上（也就是在上方 <code>host</code> 中配置的服务器 ip）。</p>
 <p>我们还可以选择「右键 -&gt; Diff with Remote」，就可以将本地的代码和 ftp 服务器上的代码做对比。</p>
@@ -644,9 +873,9 @@
 <p>（1）当我们换另外一台电脑时，可以先在 VS Code 中安装 <code>settings-sync</code> 插件。</p>
 <p>（2）安装完插件后，在插件里使用 GitHub 账号登录。</p>
 <p>（3）登录之后，插件的界面上，会自动出现之前的同步记录：</p>
-<p><img src="http://img.smyhvae.com/20200521_1530.png"></p>
+<p><img src="http://img.smyhvae.com/20200521_1530.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，我们点击最新的那条记录，就可将云端的最新配置同步到本地：</p>
-<p><img src="http://img.smyhvae.com/20200521_1550.png"></p>
+<p><img src="http://img.smyhvae.com/20200521_1550.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>如果你远程的配置没有成功同步到本地，那可能是网络的问题，此时，可以使用快捷键 「Command + Shift + P」，在弹出的命令框中输入 sync，并选择「下载配置」，多试几次。</p>
 <p><strong>使用其他人的配置</strong>：</p>
 <p>如果我们想使用别人的配置，首先需要对方提供给你 gist。具体步骤如下：</p>
@@ -654,7 +883,7 @@
 <p>（2）使用快捷键 「Command + Shift + P」，在弹出的命令框中输入 sync，并选择「下载配置」</p>
 <p>（3）在弹出的界面中，选择「Download Public Gist」，然后输入别人分享给你的 gist。注意，这一步不需要登录 GitHub 账号。</p>
 <h2 id="八、三头六臂：VS-Code-插件推荐"><a href="#八、三头六臂：VS-Code-插件推荐" class="headerlink" title="八、三头六臂：VS Code 插件推荐"></a>八、三头六臂：VS Code 插件推荐</h2><p>VS Code 有一个很强大的功能就是支持插件扩展，让你的编辑器仿佛拥有了三头六臂。</p>
-<p><img src="http://img.smyhvae.com/20191108_1553_2.png"></p>
+<p><img src="http://img.smyhvae.com/20191108_1553_2.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，点击红框部分，即可在输入框里，查找你想要的插件名，然后进行安装。</p>
 <p>我来列举几个常见的插件，这些插件都很实用。注意：<strong>顺序越靠前，越实用</strong>。</p>
 <h3 id="1、GitLens-【荐】"><a href="#1、GitLens-【荐】" class="headerlink" title="1、GitLens 【荐】"></a>1、GitLens 【荐】</h3><p>我强烈建议你安装插件<code>GitLens</code>，它是 VS Code 中我最推荐的一个插件，简直是 Git 神器，码农必备。如果你不知道，那真是 out 了。</p>
@@ -687,19 +916,19 @@
 <h3 id="9、vscode-icons"><a href="#9、vscode-icons" class="headerlink" title="9、vscode-icons"></a>9、vscode-icons</h3><p>vscode-icons 会根据文件的后缀名来显示不同的图标，让你更直观地知道每种文件是什么类型的。</p>
 <h3 id="10、Project-Manager"><a href="#10、Project-Manager" class="headerlink" title="10、Project Manager"></a>10、Project Manager</h3><p>工作中，我们经常会来回切换多个项目，每次都要找到对应项目的目录再打开，比较麻烦。Project Manager 插件可以解决这样的烦恼，它提供了专门的视图来展示你的项目，我们可以把常用的项目保存在这里，需要时一键切换，十分方便。</p>
 <h3 id="11、TODO-Highlight"><a href="#11、TODO-Highlight" class="headerlink" title="11、TODO Highlight"></a>11、TODO Highlight</h3><p>写代码过程中，突然发现一个 Bug，但是又不想停下来手中的活，以免打断思路，怎么办？按照代码规范，我们一般是在代码中加个 TODO 注释。比如：（注意，一定要写成大写<code>TODO</code>，而不是小写的<code>todo</code>）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//TODO:这里有个bug，我一会儿再收拾你</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span>TODO:这里有个bug，我一会儿再收拾你<br></code></pre></td></tr></table></figure>
 
 <p>或者：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//FIXME:我也不知道为啥， but it works only that way.</span><br></pre></td></tr></table></figure>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c"><span class="hljs-comment">//<span class="hljs-doctag">FIXME:</span>我也不知道为啥， but it works only that way.</span><br></code></pre></td></tr></table></figure>
 
 <p>安装了插件 <code>TODO Highlight</code>之后，按住「Cmd + Shift + P」打开命令面板，输入「Todohighlist」，选择相关的命令，我们就可以看到一个 todoList 的清单。</p>
 <h3 id="12、WakaTime-【荐】"><a href="#12、WakaTime-【荐】" class="headerlink" title="12、WakaTime 【荐】"></a>12、WakaTime 【荐】</h3><p>统计在 VS Code 里写代码的时间。统计效果如下：</p>
-<p><img src="http://img.smyhvae.com/20200618_2300.png"></p>
+<p><img src="http://img.smyhvae.com/20200618_2300.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="13、Code-Time"><a href="#13、Code-Time" class="headerlink" title="13、Code Time"></a>13、Code Time</h3><p><code>Code Time</code>插件：记录编程时间，统计代码行数。</p>
 <p>安装该插件后，VS Code 底部的状态栏右下角可以看到时间统计。点击那个位置之后，选择「Code Time Dashboard」，即可查看统计结果。</p>
 <p>备注：团长试了一下这个 code time 插件，发现统计结果不是很准。</p>
 <h3 id="14、Markdown-Preview-Github-Styling-【荐】"><a href="#14、Markdown-Preview-Github-Styling-【荐】" class="headerlink" title="14、Markdown Preview Github Styling 【荐】"></a>14、Markdown Preview Github Styling 【荐】</h3><p>以 GitHub 风格预览 Markdown 样式，十分简洁优雅。就像下面这样，左侧书写 Markdown 文本，右侧预览 Markdown 的渲染效果：</p>
-<p><img src="http://img.smyhvae.com/20200618_2025.png"></p>
+<p><img src="http://img.smyhvae.com/20200618_2025.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="15、Markdown-Preview-Enhanced"><a href="#15、Markdown-Preview-Enhanced" class="headerlink" title="15、Markdown Preview Enhanced"></a>15、Markdown Preview Enhanced</h3><p>预览 Markdown 样式。</p>
 <h3 id="Markdown-All-in-One"><a href="#Markdown-All-in-One" class="headerlink" title="Markdown All in One"></a>Markdown All in One</h3><p>这个插件将帮助你更高效地在 Markdown 中编写文档。</p>
 <h3 id="16、Settings-Sync【荐】"><a href="#16、Settings-Sync【荐】" class="headerlink" title="16、Settings Sync【荐】"></a>16、Settings Sync【荐】</h3><ul>
@@ -724,10 +953,10 @@
 <p>备注：相比之下，Prettier 是当前最流行的代码格式化工具，比 Beautify 用得更多。</p>
 <h3 id="24、JavaScript-ES6-code-snippets"><a href="#24、JavaScript-ES6-code-snippets" class="headerlink" title="24、JavaScript(ES6) code snippets"></a>24、JavaScript(ES6) code snippets</h3><p>ES6 语法智能提示，支持快速输入。</p>
 <h3 id="25、Search-node-modules-【荐】"><a href="#25、Search-node-modules-【荐】" class="headerlink" title="25、Search node_modules 【荐】"></a>25、Search node_modules 【荐】</h3><p><code>node_modules</code>模块里面的文件夹和模块实在是太多了，根本不好找。好在安装 <code>Search node_modules</code> 这个插件后，输入快捷键「Cmd + Shift + P」，然后输入 <code>node_modules</code>，在弹出的选项中选择 <code>Search node_modules</code>，即可搜索 node_modules 里的模块。</p>
-<p><img src="http://img.smyhvae.com/20200618_2100.png"></p>
+<p><img src="http://img.smyhvae.com/20200618_2100.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="26、indent-rainbow：突出显示代码缩进"><a href="#26、indent-rainbow：突出显示代码缩进" class="headerlink" title="26、indent-rainbow：突出显示代码缩进"></a>26、indent-rainbow：突出显示代码缩进</h3><p><code>indent-rainbow</code>插件：突出显示代码缩进。</p>
 <p>安装完成后，效果如下图所示：</p>
-<p><img src="http://img.smyhvae.com/20190418_1958.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1958.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="27、javascript-console-utils：快速打印-log-日志【荐】"><a href="#27、javascript-console-utils：快速打印-log-日志【荐】" class="headerlink" title="27、javascript console utils：快速打印 log 日志【荐】"></a>27、javascript console utils：快速打印 log 日志【荐】</h3><p>安装这个插件后，当我们按住快捷键「Cmd + Shift + L」后，即可自动出现日志 <code>console.log()</code>。简直是日志党福音。</p>
 <p>当我们选中某个变量 <code>name</code>，然后按住快捷键「Cmd + Shift + L」，即可自动出现这个变量的日志 <code>console.log(name)</code>。</p>
 <p>其他的同类插件还有：Turbo Console Log。</p>
@@ -743,11 +972,11 @@
 </ul>
 <h3 id="28、Code-Spell-Checker：单词拼写错误检查"><a href="#28、Code-Spell-Checker：单词拼写错误检查" class="headerlink" title="28、Code Spell Checker：单词拼写错误检查"></a>28、Code Spell Checker：单词拼写错误检查</h3><p>这个拼写检查程序的目标是帮助捕获常见的单词拼写错误，可以检测驼峰命名。从此告别 Chinglish.</p>
 <h3 id="29、Local-History-【荐】"><a href="#29、Local-History-【荐】" class="headerlink" title="29、Local History 【荐】"></a>29、Local History 【荐】</h3><p>维护文件的本地历史记录，强烈建议安装。代码意外丢失时，有时可以救命。</p>
-<p><img src="http://img.smyhvae.com/20200618_2246.png"></p>
+<p><img src="http://img.smyhvae.com/20200618_2246.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="30、Polacode-2020：生成代码截图-【荐】"><a href="#30、Polacode-2020：生成代码截图-【荐】" class="headerlink" title="30、Polacode-2020：生成代码截图 【荐】"></a>30、Polacode-2020：生成代码截图 【荐】</h3><p>可以把代码片段保存成美观的图片，主题不同，代码的配色方案也不同，也也可以自定义设置图片的边框颜色、大小、阴影。</p>
 <p>尤其是在我们做 PPT 分享时需要用到代码片段时，或者需要在网络上优雅地分享代码片段时，这一招很有用。</p>
 <p>生成的效果如下：</p>
-<p><img src="http://img.smyhvae.com/20200619_1403.png"></p>
+<p><img src="http://img.smyhvae.com/20200619_1403.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>其他同类插件：<code>CodeSnap</code>。我们也可以通过 <a target="_blank" rel="noopener" href="https://carbon.now.sh/">https://carbon.now.sh/</a>这个网站生成代码图片</p>
 <p>有人可能会说：直接用 QQ 截图不行吗？可以是可以，但不够美观、不够干净。</p>
 <h3 id="31、Image-Preview-【荐】"><a href="#31、Image-Preview-【荐】" class="headerlink" title="31、Image Preview 【荐】"></a>31、Image Preview 【荐】</h3><p>图片预览。鼠标移动到图片 url 上的时候，会自动显示图片的预览和图片尺寸。</p>
@@ -758,14 +987,14 @@
 <h3 id="36、Color-Info"><a href="#36、Color-Info" class="headerlink" title="36、Color Info"></a>36、Color Info</h3><p>这个便捷的插件，将为你提供你在 CSS 中使用颜色的相关信息。你只需在颜色上悬停光标，就可以预览色块中色彩模型的（HEX、 RGB、HSL 和 CMYK）相关信息了。</p>
 <h3 id="37、RemoteHub"><a href="#37、RemoteHub" class="headerlink" title="37、RemoteHub"></a>37、RemoteHub</h3><p>不要惊讶，RemoteHub 和 GitLens 是同一个作者开发出来的。</p>
 <p><code>RemoteHub</code>插件的作用是：可以在本地查看 GitHub 网站上的代码，而不需要将代码下载到本地。</p>
-<p><img src="http://img.smyhvae.com/20190418_1937.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_1937.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>这个插件目前使用的人还不多，赶紧安装起来尝尝鲜吧。</p>
 <h3 id="38、Live-Share：实时编码分享"><a href="#38、Live-Share：实时编码分享" class="headerlink" title="38、Live Share：实时编码分享"></a>38、Live Share：实时编码分享</h3><p><code>Live Share</code>这个神奇的插件是由微软官方出品，它的作用是：<strong>实时编码分享</strong>。也就是说，它可以实现你和你的同伴一起写代码。这绝对就是<strong>结对编程</strong>的神器啊。</p>
 <p>安装方式：</p>
 <p>打开插件管理，搜索“live share”，安装。安装后重启 VS Code，在左侧会多出一个按钮：</p>
-<p><img src="http://img.smyhvae.com/20190418_2012.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_2012.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <p>上图中，点击红框部分，登录后就可以分享你的工作空间了。</p>
-<p><img src="http://img.smyhvae.com/20190418_2005.png"></p>
+<p><img src="http://img.smyhvae.com/20190418_2005.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
 <h3 id="39、Import-Cost"><a href="#39、Import-Cost" class="headerlink" title="39、Import Cost"></a>39、Import Cost</h3><p>在项目开发过程中，我们会引入很多 npm 包，有时候可能只用到了某个包里的一个方法，却引入了整个包，导致代码体积增大很多。<code>Import Cost</code>插件可以在代码中友好的提示我们，当前引入的包会增加多少体积，这很有助于帮我们优化代码的体积。</p>
 <h3 id="Paste-JSON-as-Code"><a href="#Paste-JSON-as-Code" class="headerlink" title="Paste JSON as Code"></a>Paste JSON as Code</h3><p>此插件可以将剪贴板中的 JSON 字符串转换成工作代码。支持多种语言。</p>
 <h2 id="八、常见主题插件"><a href="#八、常见主题插件" class="headerlink" title="八、常见主题插件"></a>八、常见主题插件</h2><p>给你的 VS Code 换个皮肤吧，免费的那种。</p>
@@ -830,12 +1059,219 @@
 </ul>
 <hr>
 <p>本作品采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
-<p><img src="https://img.smyhvae.com/20210329_1930.png"></p>
-</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Blog.github.io/2021/06/15/hello-world/"><span class="level-item">Hello World</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/Blog.github.io/">Flyieen的博客</a><p class="is-size-7"><span>&copy; 2021 Flyieen</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="/Blog.github.io/js/column.js"></script><!--!--><script src="/Blog.github.io/js/main.js" defer></script><!--!--></body></html>
+<p><img src="https://img.smyhvae.com/20210329_1930.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/Blog.github.io/tags/VsCode/">VsCode</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/Blog.github.io/js/events.js" ></script>
+<script  src="/Blog.github.io/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/Blog.github.io/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/Blog.github.io/js/local-search.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/Blog.github.io/js/boot.js" ></script>
+
+
+</body>
+</html>
