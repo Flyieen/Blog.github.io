@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Blog.github.io/img/favicon.png">
+  <link rel="icon" href="/Blog.github.io/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Flyieen">
+  <meta name="keywords" content="">
+  
+  <title>Deepin V20科学上网方法 - Flyieen的博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/Blog.github.io/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/Blog.github.io/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"flyieen.github.io","root":"/Blog.github.io/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/Blog.github.io/js/utils.js" ></script>
+  <script  src="/Blog.github.io/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/Blog.github.io/">&nbsp;<strong>Flyieen's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.github.io/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/Blog.github.io/img/Ash.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Deepin V20科学上网方法">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-07-28 20:25" pubdate>
+        2021年7月28日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      13
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Deepin V20科学上网方法</h1>
+            
+            <div class="markdown-body">
+              <h2 id="关于-deepin-V20"><a href="#关于-deepin-V20" class="headerlink" title="关于 deepin V20"></a>关于 deepin V20</h2><p>其实本来在大一的时候就知道了deepin，那个时候还是在deepin 15.2的时代，本着支持国产的信念用了一年半，然后还是回到了Windows的怀抱，国产桌面系统的道路还是很长呀。转眼都到研究生了，课题组的电脑反正也不常用，就瞎捣鼓成linux，也方便学习linux的操作</p>
+<p>虽然装过挺多的linux发行版，但是如果要我留一个的话必定是Deepin，理由就一个，不用到处搜教程装各种必须要用的软件实在太省心了，而且我觉得deepin v20已经有了自己的设计语言，当然也有许多人觉得它的标题栏特别宽，而且果味十足，不过我反正觉得颜值挺好的，就是bug能再少点就好了。</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/deein-screenshot.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+<h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p>如果你的需求就是上github的话，那不用科学上网都可，Linux环境即便你没走代理，通过修改hosts配置文件一样可以登录，该方法亲测有效。</p>
+<p>首先第一次使用时先打开终端命令修改root权限密码：</p>
+<p>在终端命令下输入以下代码，并按照提示修改密码。密码一共要输入三次，此时终端里不会显示，输入完了回车即可：</p>
+<p>su root passwd</p>
+<p>修改好密码后输入以下命令，进入终端内的文本编辑：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">sudo vi /etc/hosts<br></code></pre></td></tr></table></figure>
+
+<p>修改好密码后输入以下命令，进入终端内的文本编辑：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">sudo vi <span class="hljs-regexp">/etc/</span>hosts<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text"># GitHub Start 140.82.113.3 github.com 140.82.114.20 gist.github.com 151.101.184.133 assets-cdn.github.com 151.101.184.133 raw.githubusercontent.com 151.101.184.133 gist.githubusercontent.com 151.101.184.133 cloud.githubusercontent.com 151.101.184.133 camo.githubusercontent.com 151.101.184.133 avatars0.githubusercontent.com 199.232.68.133 avatars0.githubusercontent.com 199.232.28.133 avatars1.githubusercontent.com 151.101.184.133 avatars1.githubusercontent.com 151.101.184.133 avatars2.githubusercontent.com 199.232.28.133 avatars2.githubusercontent.com 151.101.184.133 avatars3.githubusercontent.com 199.232.68.133 avatars3.githubusercontent.com 151.101.184.133 avatars4.githubusercontent.com 199.232.68.133 avatars4.githubusercontent.com 151.101.184.133 avatars5.githubusercontent.com 199.232.68.133 avatars5.githubusercontent.com 151.101.184.133 avatars6.githubusercontent.com 199.232.68.133 avatars6.githubusercontent.com 151.101.184.133 avatars7.githubusercontent.com 199.232.68.133 avatars7.githubusercontent.com 151.101.184.133 avatars8.githubusercontent.com 199.232.68.133 avatars8.githubusercontent.com # GitHub End<br></code></pre></td></tr></table></figure>
+
+<p>然后按ESC退出insert模式，之后按：键进入命令模式，再输入wq 回车保存退出，然后你就可以正常访问Github了<br>（这里修改文件全程使用了vim编辑器，操作不明白的话可以搜一下vim怎么用，很简单，基本方法三分钟学完了)</p>
+<h3 id="Qv2ray-软件"><a href="#Qv2ray-软件" class="headerlink" title="Qv2ray 软件"></a>Qv2ray 软件</h3><p>能够访问github后搜索Qv2ray，这里插一句，其实在windows环境下clash软件科学上网超级简单，但是Linux环境下配置就麻烦的多，这里就改用Qv2ray了。之后在release页面下载你电脑对应的软件包保存（一般都是下载v2ray-linux-64.zip这个包，即64位架构的，你是32位架构的就下32位那个）。方便起见我还是直接把<a target="_blank" rel="noopener" href="https://github.com/Qv2ray/Qv2ray/releases">地址</a>贴在这里。这个是国人的appimage版本，如果你有appimage环境（例如deepin）就直接下载解压运行即可。deepin商店有appimage安装器，安装这个软件再安装这个也可以</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/1.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+<p>然后再打开你买的代理服务，我使用的掠影网络!  然后复制对应的订阅链接</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/2.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+<p>打开安装的Qv2ray，进入首选项面板，进去后将下面的Qv2ray代理选择成系统代理。</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/%E6%88%AA%E5%9B%BE_qv2ray_20210728210156.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+<p>然后再到主界面的分组中的订阅设置面板，把上面复制的订阅链接填入，然后更新订阅，就可以再主界面看到默认分组下面有香港高速等选项</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/%E6%88%AA%E5%9B%BE_qv2ray_20210728210629.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+<p>有人到了上面这里就可以正常连接了，但是可能还会出现“ V2Ray内核启动失败：找不到V2Ray核心可执行文件”  这个错误，这个错误是由于找不到V2Ray核心导致，所以我们还需要配置V2Ray Core，然后把它放到某个文件夹，然后自己再到内核设置面板设置一下即可</p>
+<p>V2Ray Core 可以自行在github上搜索下载，</p>
+<p><img src="https://gitee.com/flyieen/image/raw/master/deepin/%E6%88%AA%E5%9B%BE_qv2ray_20210728212332.png" srcset="/Blog.github.io/img/loading.gif" lazyload></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/Blog.github.io/tags/Linux/">Linux</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/Blog.github.io/2021/07/28/%E4%BD%8D%E8%BF%90%E7%AE%97/">
+                        <span class="hidden-mobile">位运算</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/Blog.github.io/js/events.js" ></script>
+<script  src="/Blog.github.io/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/Blog.github.io/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/Blog.github.io/js/local-search.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/Blog.github.io/js/boot.js" ></script>
+
+
+</body>
+</html>
